@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luchonio Portafolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="content">
+    <div class="content-grid">
+        <!-- <script src="scripts/luchonio-email.js"></script> -->
+        <header class="header home-header">
+            <div class="header-grid">
+                <a class="logo_link home-logo_link" href="index-es.html"><img class="logo-img" src="images/luchonio_logo.png" alt="Luchonio's Logo"></a>
+                <nav class="language_navigation home-language_navigation">
+                    <div class="language_navigation-grid">
+                        <a class="language_link home-language_link home-current_language" href="index-es.html"><img class="language_link_img" src="images/spain-flag-icon.png" alt="Spain Flag Icon">Español</a>
+                        <a class="language_link home-language_link home-current_language language_link_mobile" href="index-es.html"><img class="language_link_mobile_img" src="images/spain-flag-icon.png" alt="Spain Flag Icon">Esp</a>
+                        <a class="language_link home-language_link home-other_language" href="index-en.html"><img class="language_link_img" src="images/american-flag-icon.png" alt="American Flag Icon">Inglés</a>
+                        <a class="language_link home-language_link home-other_language language_link_mobile" href="index-en.html"><img class="language_link_mobile_img" src="images/american-flag-icon.png" alt="American Flag Icon">Ing</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main home-main">
+            <div class="main-grid">
+                <nav class="navigation home-navigation">
+                    <a class="nav_link" href="index-es.html">Inicio</a>
+                    <a class="nav_link" href="gallery-es.html">Galeria</a>
+                    <a class="nav_link" href="fantasy-gallery-es.html">Galeria de Fantasia</a>
+                    <button id="tab1" class="nav_link tablinks" onclick="currentSlide(1)">Ambarine</button>
+                    <button id="tab2" class="nav_link tablinks" onclick="currentSlide(2)">Mommy Long Leggs Boceto</button>
+                    <button id="tab3" class="nav_link tablinks" onclick="currentSlide(3)">Buttercup</button>
+                    <a class="nav_link" href="contact-luchonio-es.html">Contactar a Luchonio</a>
+                </nav>
+                <div class="hero">
+                    <div class="hero-grid">
+                        <h2 class="hero-title">Contacta con Luchonio y haz tus gráficos a tu manera</h2>
+                        <div class="hero-img-grid"><img class="hero-img" src="images/grupal.png" alt="grupal"></div>
+                        <div class="button-box hero-contact-button"><a class="contact_button" href="contact-luchonio-es.html">Contactar a Luchonio</a></div>
+                    </div>
+                </div>
+                <div class="slide-show home-slide-show">
+                    <div class="slide-show-grid home-slide-show-grid">
+                        <div class="slide-show-display home-slide-show-display">
+                            <div class="slide-show-display-grid home-slide-show-display-grid">
+                                <h1 class="slide-show-headline home-slide-show-headline">Mira esto!</h1>
+                                <!-- Full-width images with number text -->
+                                <section class="mySlides home-mySlides home-ambarine-card">
+                                    <div class="slide-grid home-slide-grid">
+                                        <h2 class="slide-headline home-slide-headline">Ambarine</h2>
+                                        <div class="numbertext home-numbertext">1 / 3</div>
+                                        <a class="card-img-grid home-card-img-grid" href="gallery-es.html"><img class="card-img home-card-img" src="images/ambarine.png" alt="Ambarine"></a>
+                                        <p class="slide-text home-slide-text">Conoce a Ambarine</p>
+                                    </div>
+                                </section>
+                                <section class="mySlides home-mySlides home-mommy_long_leggs_boceto-card">
+                                    <div class="slide-grid home-slide-grid">
+                                        <h2 class="slide-headline home-slide-headline">Mommy Long Leggs Boceto</h2>
+                                        <div class="numbertext home-numbertext">2 / 3</div>
+                                        <a class="card-img-grid home-card-img-grid" href="fantasy-gallery-es.html"><img class="card-img home-card-img" src="images/mommy_long_leggs_boceto.png" alt="Mommy Long Leggs Boceto"></a>
+                                        <p class="slide-text home-slide-text">Conoce el Mommy Long Leggs Boceto</p>
+                                    </div>
+                                </section>
+                                <section class="mySlides home-mySlides home-buttercup-card">
+                                    <div class="slide-grid home-slide-grid">
+                                        <h2 class="slide-headline home-slide-headline">Buttercup</h2>
+                                        <div class="numbertext home-numbertext">3 / 3</div>
+                                        <a class="card-img-grid home-card-img-grid" href="gallery-es.html"><img class="card-img home-card-img" src="images/buttercup.png" alt="Buttercup"></a>
+                                        <p class="slide-text home-slide-text">Conoce a Buttercup</p>
+                                    </div>
+                                </section>
+                                <h2 class="slide-show-sub-headline home-slide-show-sub-headline">Contactanos y pide los graficos a tu gusto</h2>
+                                <!-- Thumbnail images -->
+                                <div class="slide-show-row home-slide-show-row">
+                                    <div class="slide-show-column"><img class="slide-show-demo slide-show-cursor" src="images/ambarine.png" onclick="currentSlide(1)" alt="Ambarine"></div>
+                                    <div class="slide-show-column"><img class="slide-show-demo slide-show-cursor" src="images/mommy_long_leggs_boceto.png" onclick="currentSlide(2)" alt="Mommy Long Leggs Boceto"></div>
+                                    <div class="slide-show-column"><img class="slide-show-demo slide-show-cursor" src="images/buttercup.png" onclick="currentSlide(3)" alt="Buttercup"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="slide-show-prev home-slide-show-prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="slide-show-next home-slide-show-next" onclick="plusSlides(1)">&#10095;</a>
+                        <script src="scripts/verticle_tabs_with_slide_show.js"></script>
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="msg-grid">
+                        <h2 class="msg-headline msg-first-headline">Ponte en contacto con Luchonio para tus personajes de dibujos animados</h2>
+                        <p class="msg-text">Luchonio's manera de dibujar se caracteriza por tener un estilo cartoon tipoco de las series emitidas por cartoon network en la epoca de los 2000, convinado con algunos razgos de las animaciones japonesas como lo son los ojos grandes y las formas estilizadas.</p>
+                        <h2 class="msg-headline msg-second-headline">Luchonio también puede ayudarlo con su logotipo</h2>
+                    </div>
+                </div>
+                <div class="see-more home-see-more">
+                    <div class="see-more-grid home-see-more-grid">
+                        <h2 class="see-more-headline home-see-more-headline">Nuevos y emocionantes personajes</h2>
+                        <img class="see-more-img home-see-more-img home-gwen" src="images/gwen.png" alt="Gwen">
+                        <a class="see-more-button home-see-more-button" href="gallery-es.html">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer home-footer">
+            <div class="footer-grid home-footer-grid">
+                <p class="footer-text footer-copywrite home-footer-text home-footer-copywrite">El arte de Luchonio &copy; 2022 - Tracy Mann</p>
+                <p class="footer-text footer-site-plan home-footer-text home-footer-site-plan"><a class="footer-link footer-site-plan-link home-footer-link" href="site-plan-luchonio-es.html">Plan del Sitio</a></p>
+                <p class="footer-text footer-contact home-footer-text home-footer-contact"><a class="footer-link footer-contact-link home-footer-link" href="contact-luchonio-es.html">Contactar a Luchonio</a></p>
+                <div class="footer-social home-footer-social">
+                    <div class="footer-social-grid home-footer-social-grid">
+                        <a class="footer-social-link footer-social-facebook home-footer-social-link home-footer-social-facebook" href="https://facebook.com" target="_blank"><img class="footer-social-img footer-social-facebook-img home-footer-social-img" src="images/facebook.png" alt="fb icon"></a>
+                        <a class="footer-social-link footer-social-twitter home-footer-social-link home-footer-social-twitter" href="https://twitter.com" target="_blank"><img class="footer-social-img footer-social-twitter-img home-footer-social-img" src="images/twitter.png" alt="twitter icon"></a>
+                        <a class="footer-social-link footer-social-whatsapp home-footer-social-link home-footer-social-whatsapp" href="https://www.whatsapp.com/" target="_blank"><img class="footer-social-img footer-social-whatsapp-img home-footer-social-img" src="images/whatsapp.png" alt="whatsapp icon"></a>
+                        <!-- <script type="text/javascript">
+                            messageWhatsAppImgLink("linkClass", "imgClass", "luchonio", "I am Calling!", "images/whatsapp.png", "whatsapp icon");
+                        </script> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

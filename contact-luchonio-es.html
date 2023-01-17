@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking to PyScript assets -->
+    <!--<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /><!---->
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Luchonio Portafolio Contactar a Luchonio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="content">
+    <div class="content-grid">
+        <!-- <script src="scripts/"></script> -->
+        <header class="header contact-header">
+            <div class="header-grid">
+                <a class="logo_link contact-logo_link" href="index-es.html"><img class="logo-img" src="images/luchonio_logo.png" alt="Luchonio's Logo"></a>
+                <nav class="language_navigation contact-language_navigation">
+                    <div class="language_navigation-grid">
+                        <a class="language_link contact-language_link contact-current_language" href="contact-luchonio-es.html"><img class="language_link_img" src="images/spain-flag-icon.png" alt="Spain Flag Icon">Español</a>
+                        <a class="language_link contact-language_link contact-current_language language_link_mobile" href="contact-luchonio-es.html"><img class="language_link_mobile_img" src="images/spain-flag-icon.png" alt="Spain Flag Icon">Esp</a>
+                        <a class="language_link contact-language_link contact-other_language" href="contact-luchonio-en.html"><img class="language_link_img" src="images/american-flag-icon.png" alt="American Flag Icon">Inglés</a>
+                        <a class="language_link contact-language_link contact-other_language language_link_mobile" href="contact-luchonio-en.html"><img class="language_link_mobile_img" src="images/american-flag-icon.png" alt="American Flag Icon">Ing</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main contact-main">
+            <div class="main-grid">
+                <nav class="navigation contact-navigation">
+                    <a class="nav_link" href="index-es.html">Inicio</a>
+                    <a class="nav_link" href="gallery-es.html">Galeria</a>
+                    <a class="nav_link" href="fantasy-gallery-es.html">Galeria de Fantasia</a>
+                    <a class="nav_link" href="contact-luchonio-es.html">Contactar a Luchonio</a>
+                </nav>
+                <div class="contact-background">
+                    <h1 class="contact-headline">Contactar a Luchonio</h1>
+                    <div id="feedback"></div>
+                    <div id="pyFeedback"></div>
+                    <div id="pyFeedback2"></div>
+                    <form class="form" action="my-handling-form-page" method="post">
+                        <ul class="list">
+                            <li>
+                                <label class="label" for="name">Nombre:</label>
+                                <input class="input" type="text" id="name" name="user_name">
+                            </li>
+                            <li>
+                                <label class="label" for="mail">E-mail:</label>
+                                <input class="input" type="text" id="mail" name="user_email">
+                            </li>
+                            <li>
+                                <label class="label" for="msg">Mensaje:</label>
+                                <textarea id="msg" class="textarea" name="user_message"></textarea>
+                            </li>
+                            <li>
+                                <button class="submit-button" type="submit">Envía tu mensaje</button>
+                            </li>
+                        </ul>
+                    </form>
+                    <py-script src="scripts/sendMessage.py"></py-script>
+                </div>
+            </div>
+        </main>
+        <footer class="footer contact-footer">
+            <div class="footer-grid contact-footer-grid">
+                <p class="footer-text footer-copywrite contact-footer-text contact-footer-copywrite">El arte de Luchonio &copy; 2022 - Tracy Mann</p>
+                <p class="footer-text footer-site-plan contact-footer-text contact-footer-site-plan"><a class="footer-link footer-site-plan-link contact-footer-link" href="site-plan-luchonio-es.html">Plan del Sitio</a></p>
+                <p class="footer-text footer-contact contact-footer-text contact-footer-contact"><a class="footer-link footer-contact-link contact-footer-link" href="contact-luchonio-es.html">Contactar a Luchonio</a></p>
+                <div class="footer-social contact-footer-social">
+                    <div class="footer-social-grid contact-footer-social-grid">
+                        <a class="footer-social-link footer-social-facebook contact-footer-social-link contact-footer-social-facebook" href="https://facebook.com" target="_blank"><img class="footer-social-img footer-social-facebook-img contact-footer-social-img" src="images/facebook.png" alt="fb icon"></a>
+                        <a class="footer-social-link footer-social-twitter contact-footer-social-link contact-footer-social-twitter" href="https://twitter.com" target="_blank"><img class="footer-social-img footer-social-twitter-img contact-footer-social-img" src="images/twitter.png" alt="twitter icon"></a>
+                        <a class="footer-social-link footer-social-whatsapp contact-footer-social-link contact-footer-social-whatsapp" href="https://www.whatsapp.com/" target="_blank"><img class="footer-social-img footer-social-whatsapp-img contact-footer-social-img" src="images/whatsapp.png" alt="whatsapp icon"></a>
+                        <!-- <script type="text/javascript">
+                            messageWhatsAppImgLink("linkClass", "imgClass", "luchonio", "I am Calling!", "images/whatsapp.png", "whatsapp icon");
+                        </script> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/form_feedback-es.js"></script>
+</body>
+</html>

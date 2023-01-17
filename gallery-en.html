@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luchonio Portfolio Gallery</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="content">
+    <div class="content-grid">
+        <!-- <script src="scripts/luchonio-email.js"></script> -->
+        <header class="header gallery-header">
+            <div class="header-grid">
+                <a class="logo_link gallery-logo_link" href="index-en.html"><img class="logo-img" src="images/luchonio_logo.png" alt="Luchonio's Logo"></a>
+                <nav class="language_navigation gallery-language_navigation">
+                    <div class="language_navigation-grid">
+                        <a class="language_link gallery-language_link gallery-current_language" href="gallery-en.html"><img class="language_link_img" src="images/american-flag-icon.png" alt="American Flag Icon">English</a>
+                        <a class="language_link gallery-language_link gallery-current_language language_link_mobile" href="gallery-en.html"><img class="language_link_mobile_img" src="images/american-flag-icon.png" alt="American Flag Icon">Eng</a>
+                        <a class="language_link gallery-language_link gallery-other_language" href="gallery-es.html"><img class="language_link_img" src="images/spain-flag-icon.png" alt="Spain Flag Icon">Spanish</a>
+                        <a class="language_link gallery-language_link gallery-other_language language_link_mobile" href="gallery-es.html"><img class="language_link_mobile_img" src="images/spain-flag-icon.png" alt="Spain Flag Icon">Spa</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main gallery-main">
+            <div class="main-grid">
+                <nav class="navigation gallery-navigation">
+                    <a class="nav_link" href="index-en.html">Home</a>
+                    <a class="nav_link" href="gallery-en.html">Gallery</a>
+                    <a class="nav_link" href="fantasy-gallery-en.html">Fantasy Gallery</a>
+                    <button id="tab1" class="nav_link tablinks" onclick="currentSlide(1)">Bebop Crew</button>
+                    <button id="tab2" class="nav_link tablinks" onclick="currentSlide(2)">Buttercup</button>
+                    <button id="tab3" class="nav_link tablinks" onclick="currentSlide(3)">Gwen</button>
+                    <a class="nav_link" href="contact-luchonio-en.html">Contact Luchonio</a>
+                </nav>
+                <div class="slide-show gallery-slide-show">
+                    <div class="slide-show-grid gallery-slide-show-grid">
+                        <div class="slide-show-display gallery-slide-show-display">
+                            <div class="slide-show-display-grid gallery-slide-show-display-grid">
+                                <h1 class="slide-show-headline gallery-slide-show-headline">Gallery</h1>
+                                <section class="mySlides gallery-mySlides gallery-bebop-crew-card">
+                                    <div class="slide-grid gallery-slide-grid">
+                                        <h2 class="slide-headline gallery-slide-headline">Bebop Crew</h2>
+                                        <div class="numbertext gallery-numbertext">1 / 3</div>
+                                        <div class="card-img-grid gallery-card-img-grid"><img class="card-img gallery-card-img" src="images/grupal.png" alt="Bebop Crew"></div>
+                                        <p class="slide-text gallery-slide-text">In this drawing we can see the bebop crew of the animated Japanese Cowboy bebop. Being a fan of this art, Luchonio took the liberty of adapting the animation designs to his drawing style. In general, Luchonio used more vivid colors for the background as in the characters to be able to distance himself a little more from the original designs and give them a more personal touch.</p>
+                                    </div>
+                                </section>
+                                <section class="mySlides gallery-mySlides gallery-buttercup-card">
+                                    <div class="slide-grid gallery-slide-grid">
+                                        <h2 class="slide-headline gallery-slide-headline">Buttercup</h2>
+                                        <div class="numbertext gallery-numbertext">2 / 3</div>
+                                        <div class="card-img-grid gallery-card-img-grid"><img class="card-img gallery-card-img" src="images/buttercup.png" alt="Buttercup"></div>
+                                        <p class="slide-text gallery-slide-text">Buttercup drawing which Luchonio made as part of a challenge on social networks. Which, consisted of drawing the character of the animated series for children "Powerpuff girls", in his drawing style, in one of the most memorable poses of this television series. He wanted to respect the original design as much as he could, since it is an animated series of which he is a big fan and had watched it when he was a child.</p>
+                                    </div>
+                                </section>
+                                <section class="mySlides gallery-mySlides gallery-gwen-card">
+                                    <div class="slide-grid gallery-slide-grid">
+                                        <h2 class="slide-headline gallery-slide-headline">Gwen</h2>
+                                        <div class="numbertext gallery-numbertext">3 / 3</div>
+                                        <div class="card-img-grid gallery-card-img-grid"><img class="card-img gallery-card-img" src="images/gwen.png" alt="Gwen"></div>
+                                        <p class="slide-text gallery-slide-text">This is a drawing of the character of Gwen from "Total Drama". In which, Luchonio wanted to give the sensation of sensuality with the pose of the character and at the same time place a detailed background and according to the tone of the animated series. Which, is a reality show in a island where the interviews with the participants take place in the bathrooms.</p>
+                                    </div>
+                                </section>
+                                <!-- Thumbnail images -->
+                                <div class="slide-show-row gallery-slide-show-row">
+                                    <div class="slide-show-column"><img class="slide-show-demo slide-show-cursor" src="images/grupal.png" onclick="currentSlide(1)" alt="Bebop Crew"></div>
+                                    <div class="slide-show-column"><img class="slide-show-demo slide-show-cursor" src="images/buttercup.png" onclick="currentSlide(2)" alt="Buttercup"></div>
+                                    <div class="slide-show-column"><img class="slide-show-demo slide-show-cursor" src="images/gwen.png" onclick="currentSlide(3)" alt="Gwen"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="slide-show-prev gallery-slide-show-prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="slide-show-next gallery-slide-show-next" onclick="plusSlides(1)">&#10095;</a>
+                        <script src="scripts/verticle_tabs_with_slide_show.js"></script>
+                    </div>
+                </div>
+                <div class="see-more gallery-see-more">
+                    <div class="see-more-grid gallery-see-more-grid">
+                        <h2 class="see-more-headline gallery-see-more-headline">Reach out and have it done your way</h2>
+                        <img class="see-more-img gallery-see-more-img gallery-mommy_long_leggs_boceto" src="images/mommy_long_leggs_boceto.png" alt="Mommy Long Leggs">
+                        <a class="see-more-button gallery-see-more-button" href="fantasy-gallery-en.html">See More</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer gallery-footer">
+            <div class="footer-grid gallery-footer-grid">
+                <p class="footer-text footer-copywrite gallery-footer-text gallery-footer-copywrite">The art of Luchonio &copy; 2022 - Tracy Mann</p>
+                <p class="footer-text footer-site-plan gallery-footer-text gallery-footer-site-plan"><a class="footer-link footer-site-plan-link gallery-footer-link" href="site-plan-luchonio-en.html">Site Plan</a></p>
+                <p class="footer-text footer-contact gallery-footer-text gallery-footer-contact"><a class="footer-link footer-contact-link gallery-footer-link" href="contact-luchonio-en.html">Contact Luchonio</a></p>
+                <div class="footer-social gallery-footer-social">
+                    <div class="footer-social-grid gallery-footer-social-grid">
+                        <a class="footer-social-link footer-social-facebook gallery-footer-social-link gallery-footer-social-facebook" href="https://facebook.com" target="_blank"><img class="footer-social-img footer-social-facebook-img gallery-footer-social-img" src="images/facebook.png" alt="fb icon"></a>
+                        <a class="footer-social-link footer-social-twitter gallery-footer-social-link gallery-footer-social-twitter" href="https://twitter.com" target="_blank"><img class="footer-social-img footer-social-twitter-img gallery-footer-social-img" src="images/twitter.png" alt="twitter icon"></a>
+                        <a class="footer-social-link footer-social-whatsapp gallery-footer-social-link gallery-footer-social-whatsapp" href="https://www.whatsapp.com/" target="_blank"><img class="footer-social-img footer-social-whatsapp-img gallery-footer-social-img" src="images/whatsapp.png" alt="whatsapp icon"></a>
+                        <!-- <script type="text/javascript">
+                            messageWhatsAppImgLink("linkClass", "imgClass", "luchonio", "I am Calling!", "images/whatsapp.png", "whatsapp icon");
+                        </script> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
